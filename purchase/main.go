@@ -1,4 +1,4 @@
-package license
+package purchase
 
 // NeedsLicense determines whether a license is needed to drive a type of vehicle.
 // Only "car" and "truck" require a license.
