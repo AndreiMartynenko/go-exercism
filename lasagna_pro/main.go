@@ -1,7 +1,7 @@
 package lasagnapro
 
 // TODO: define the 'PreparationTime()' function
-func PreparationTime(layers int, timePerLayer int) int {
+func PreparationTime(layers []string, timePerLayer int) int {
 	// This function should return the preparation time in minutes
 	// based on the number of layers and the time per layer.
 	// For now, it just panics to indicate it's not implemented.
@@ -10,7 +10,7 @@ func PreparationTime(layers int, timePerLayer int) int {
 	if timePerLayer == 0 {
 		timePerLayer = 2
 	}
-	return layers * timePerLayer
+	return len(layers) * timePerLayer
 }
 
 // TODO: define the 'Quantities()' function
