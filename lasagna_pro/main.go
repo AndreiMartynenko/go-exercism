@@ -14,10 +14,28 @@ func PreparationTime(layers []string, timePerLayer int) int {
 }
 
 // TODO: define the 'Quantities()' function
-func Quantities() {}
+func Quantities(layers []string) (int, float64) {
+	noodles := 0
+	sauce := 0.0
+	for _, layer := range layers {
+		if layer == "noodles" {
+			noodles += 50
+		} else if layer == "sauce" {
+			sauce += 0.2
+		}
+	}
+	return noodles, sauce
+}
 
 // TODO: define the 'AddSecretIngredient()' function
-func AddSecretIngredient() {}
+func AddSecretIngredient(listOfFriend, ingredientList []string) {
+	if len(listOfFriend) == 0 || len(ingredientList) == 0 {
+		return
+	}
+	// The secret ingredient is the last one in the friend's list
+	secretIngredient := listOfFriend[len(listOfFriend)-1]
+	ingredientList[len(ingredientList)-1] = secretIngredient
+}
 
 // TODO: define the 'ScaleRecipe()' function
 
