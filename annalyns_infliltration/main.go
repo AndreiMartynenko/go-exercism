@@ -1,17 +1,8 @@
 package annalynsinfliltration
 
-var knightIsAwake = false
-var archerIsAwake = false
-var prisonerIsAwake = false
-var petDogIsPresent = false
-
 // CanFastAttack can be executed only when the knight is sleeping.
 func CanFastAttack(knightIsAwake bool) bool {
-	if !knightIsAwake {
-		return true
-	}
-	return false
-	panic("Please implement the CanFastAttack() function")
+	return !knightIsAwake
 }
 
 // CanSpy can be executed if at least one of the characters is awake.
@@ -20,7 +11,6 @@ func CanSpy(knightIsAwake, archerIsAwake, prisonerIsAwake bool) bool {
 		return true
 	}
 	return false
-	panic("Please implement the CanSpy() function")
 
 }
 
@@ -30,7 +20,6 @@ func CanSignalPrisoner(archerIsAwake, prisonerIsAwake bool) bool {
 		return true
 	}
 	return false
-	panic("Please implement the CanSignalPrisoner() function")
 }
 
 // CanFreePrisoner can be executed if the prisoner is awake and the other 2 characters are asleep
@@ -43,5 +32,4 @@ func CanFreePrisoner(knightIsAwake, archerIsAwake, prisonerIsAwake, petDogIsPres
 		return true
 	}
 	return false
-	panic("Please implement the CanFreePrisoner() function")
 }
