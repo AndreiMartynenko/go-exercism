@@ -14,7 +14,6 @@ func GetItem(slice []int, index int) int {
 		return -1
 	}
 	return slice[index]
-	//panic("Please implement the GetItem function")
 }
 
 // SetItem writes an item to a slice at given position overwriting an existing value.
