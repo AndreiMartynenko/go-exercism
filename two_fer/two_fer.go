@@ -1,4 +1,3 @@
-package twofergo
 package twofer
 
 // ShareWith should have a comment documenting it.
