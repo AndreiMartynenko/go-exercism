@@ -27,6 +27,7 @@ import "fmt"
 // 	return fmt.Sprintf("%d", number)
 // }
 
+// second version
 func Convert(number int) string {
 	result := ""
 
