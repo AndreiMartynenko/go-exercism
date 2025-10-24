@@ -1,5 +1,6 @@
 package twofer
 
+// ShareWith name returns a string in the form of "One for <name>, one for me.".
 // ShareWith should have a comment documenting it.
 func ShareWith(name string) string {
 
